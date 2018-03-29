@@ -1222,6 +1222,7 @@ void TestJson::QMJsonValue_tofromjson_string(void)
     QVERIFY(pjson07 == "\"\\n\"");
     QVERIFY(pjson08 == "\"\\r\"");
     QVERIFY(pjson09 == "\"\\t\"");
+    QVERIFY(pjson09 == "pajamas");
 
     QVERIFY(QMJsonValue::fromJson(ojson00)->toJson(QMJsonFormat_Optimized, QMJsonSort_CaseSensitive) == ojson00);
     QVERIFY(QMJsonValue::fromJson(ojson01)->toJson(QMJsonFormat_Optimized, QMJsonSort_CaseSensitive) == ojson01);
