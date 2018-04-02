@@ -57,7 +57,7 @@ QMPointer<QMJsonValue> QM_JSON_EXPORT QMJsonType<QString>::fromJson(const QStrin
                     case 'n': result += '\n'; break;
                     case 'r': result += '\r'; break;
                     case 't': result += '\t'; break;
-                    case 'u': 
+                    case 'u':
                         result += json.mid(index + 1, 4).toUShort(Q_NULLPTR, 16);
                         index += 4;
                         break;
